@@ -1,0 +1,106 @@
+.containerTienda {
+    @include flex (row, inherit, inherit, inherit);
+    width: 100%;
+    margin-top: 5rem;
+    padding: 20px;
+
+    .column1Tienda {
+        @include flex (column, inherit, inherit, inherit);
+        width: 50%;
+        padding: 30px;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            color: $rojoSeleccionado;
+            margin-top: 2rem;
+        }
+
+        .carta {
+            padding: 4px;
+            background-color: $rojoSeleccionado;
+            border-radius: 10px;
+        }
+    }
+
+    .column2Tienda {
+        @include flex (column, inherit, inherit, inherit);
+        margin-top: 3rem;
+        padding: 30px;
+
+        h4 {
+            color: $rojoSeleccionado;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            color: $rojoSeleccionado;
+            text-transform: uppercase;
+        }
+
+        h6 {
+            margin-top: 1rem;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+
+
+        form {
+            @include flex (column, inherit, inherit, inherit);
+            width: 100%;
+            margin-top: 2rem;
+
+            .formRow {
+                @include flex (row, inherit, inherit, inherit);
+                width: 100%;
+                margin: 1rem;
+                margin-left: 0;
+
+                label {
+                    margin-right: 3rem;
+                    color: $rojoSeleccionado;
+                }
+            }
+
+            .añadir {
+                @include flex (inherit, inherit, center, inherit);
+                width: 100%;
+
+                .añadirCarrito {
+                    margin-top: 2rem;
+                    width: 40%;
+                    color: $rojoSeleccionado;
+                    font-weight: 800;
+                    font-size: 18px;
+                    background-color: #f0e7e3;
+                    border-radius: 10px;
+                    padding: 5px;
+                    border: $border-fino;
+                }
+            }
+        }
+    }
+}
+
+.comprar {
+    @include flex (inherit, inherit, center, inherit);
+    width: 100%;
+
+    .comprarWhatsapp {
+        @include flex (inherit, inherit, center, inherit);
+        margin-bottom: 3rem;
+        padding: 15px;
+        color: rgb(23, 204, 23);
+        font-weight: 800;
+        font-size: 18px;
+        background-color: rgba(23, 204, 23, 0.2);
+        border-radius: 10px;
+        padding: 5px;
+        border: solid 1px rgb(23, 204, 23);
+    }
+}

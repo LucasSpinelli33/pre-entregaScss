@@ -1,0 +1,15 @@
+.quienesSomos {
+    @include flex (column, inherit, inherit, inherit);
+    padding: 10px;
+    margin-top: 5rem;
+
+    h2 {
+        font-family: $cursiva;
+        color: $rojoSeleccionado;
+    }
+
+
+    p {
+        @include flex (inherit, inherit, inherit, wrap);
+    }
+}

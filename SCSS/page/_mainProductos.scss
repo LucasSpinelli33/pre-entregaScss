@@ -1,0 +1,61 @@
+.mainProductos {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        margin: auto;
+        padding: 50px;
+        column-gap: 20px;
+        row-gap: 40px;
+
+        .gridItem {
+            @include flex (inherit, inherit, inherit, wrap);
+            border: #721422 7px solid;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            background-color: $rojoSeleccionado;
+
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            a.linkProductos {
+                @include flex (inherit, center, center, inherit);
+                text-decoration: none;
+                font-size: 25px;
+                color: #f0e7e3;
+                padding: 7px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.todosProductos {
+    @include flex (inherit, inherit, center, inherit);
+    width: 100%;
+
+    a {
+        @include flex (inherit, inherit, center, inherit);
+        text-decoration: none;
+        padding-bottom: 2rem;
+        border: $border-fino;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px;
+        color: $rojoSeleccionado;
+        margin-bottom: 2rem;
+
+        &:hover {
+            background-color: rgba(24, 24, 24, 0.2);
+            border-radius: 10px;
+            padding: 12px;
+        }
+    }
+
+}
+

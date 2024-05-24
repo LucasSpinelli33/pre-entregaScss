@@ -1,0 +1,138 @@
+.container {
+    @include flex (inherit, inherit, space-around, inherit);
+    padding: 50px;
+
+    .row {
+        .column {
+            @include flex (column, inherit, inherit, inherit);
+        }
+
+        .column1 {
+            @include flex (column, inherit, start, inherit);
+
+            iframe {
+                margin-top: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .linkMaps a {
+                @include flex (inherit, inherit, center, inherit);
+                text-decoration: none;
+                color: $rojoSeleccionado;
+                margin-top: 2rem;
+            }
+
+            .imageContacto {
+                padding: 30px;
+
+                img.icono {
+                    width: 60px;
+                }
+
+                a.perfil {
+                    text-decoration: none;
+                    border: $border-fino;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    padding: 10px;
+                    color:$rojoSeleccionado;
+
+                    &:hover {
+                        background-color: rgba(24, 24, 24, 0.2);
+                        border-radius: 10px;
+                        padding: 7px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .column2 {
+        @include flex (column, inherit, start, inherit);
+        padding-top: 2%;
+
+        .direccionLocales {
+            @include flex (column, inherit, center, inherit);
+            margin-top: 4rem;
+            h5 {
+                margin-top: 4rem;
+                text-align: center;
+                text-decoration: underline;
+                color: $rojoSeleccionado;
+                text-transform: uppercase;
+                justify-content: center;
+            }
+
+            ul {
+                @include flex (column, inherit, start, inherit);
+                margin-top: 3rem;
+                color: $rojoSeleccionado;
+                text-transform: uppercase;
+
+                li {
+                    padding: 20px;
+                    font-size: 20px;
+                }
+            }
+
+            h6 {
+                text-align: center;
+                justify-content: center;
+                margin-top: 7rem;
+                font-size: 20px;
+                color: $rojoSeleccionado;
+                text-transform: uppercase;
+            }
+        }
+
+
+
+        p {
+
+            @include flex (inherit, end, center, inherit);
+            font-size: 25px;
+            color: $rojoSeleccionado;
+            text-transform: uppercase;
+            font-family: $cursiva;
+        }
+
+        form {
+            @include flex (column, inherit, inherit, inherit);
+            padding: 20px;
+            text-transform: uppercase;
+            color: $rojoSeleccionado;
+
+            input {
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .submit {
+            input {
+                @include flex (inherit, inherit, center, inherit);
+                margin-top: 5rem;
+                width: 100%;
+                border: $border-fino;
+                border-radius: 10px;
+                font-size: 15px;
+                background-color: #f0e7e3;
+                padding: 5px;
+                color: $rojoSeleccionado;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: rgba(24, 24, 24, 0.2);
+                    border-radius: 10px;
+                    padding: 7px;
+                }
+            }
+
+        }
+    }
+
+}

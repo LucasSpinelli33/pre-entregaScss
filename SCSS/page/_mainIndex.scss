@@ -1,0 +1,12 @@
+.carouselContainer {
+    @include flex (inherit, center, center, inherit);
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 9%;
+
+    .carousel {
+        width: 50%;
+        border: 5px solid #75151e;
+        border-radius: 8px;
+    }
+}
