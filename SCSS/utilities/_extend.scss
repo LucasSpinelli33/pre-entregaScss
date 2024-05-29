@@ -1,0 +1,32 @@
+%border-fino {
+    border: solid 1px #75151e;
+
+}
+
+%border-grueso {
+    border: solid 3px #75151e;
+}
+
+%animacion {
+    width: 10%;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2ms;
+
+    &:hover {
+        transform: scale(2) rotate(10deg) translate(-25px, -5px);
+    }
+}
+
+%animacionNav {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2ms;
+
+    &:hover {
+        transform: scale(1.2);
+        @extend %border-grueso;
+    }
+}
