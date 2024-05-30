@@ -177,7 +177,7 @@ header ul.headerLista img {
   display: flex;
 }
 header ul.headerLista li.logoCabecera {
-  width: 20%;
+  width: 25%;
   display: flex;
 }
 header ul.headerLista li.headerSearch form.d-flex button.btn-outline-success {
