@@ -559,7 +559,7 @@ body .stickyWhatsapp img {
   margin-top: 1rem;
 }
 .containerTienda .column2Tienda p {
-  font-size: 12px;
+  font-size: 11px;
 }
 .containerTienda .column2Tienda form {
   display: flex;
@@ -854,7 +854,7 @@ body .stickyWhatsapp img {
     flex-wrap: inherit;
   }
   body .containerTienda .column2Tienda form .añadir .añadirCarrito {
-    width: 200px;
+    width: 201px;
     margin-bottom: 1rem;
   }
   body .mainContacto .column1 {
