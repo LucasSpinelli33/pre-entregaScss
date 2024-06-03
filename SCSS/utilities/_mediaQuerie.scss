@@ -274,6 +274,51 @@
             }
         }
 
+        //main tienda
+        .containerTienda {
+            @include flex (column, center, center, wrap);
+
+            .column1Tienda {
+                @include flex (inherit, inherit, center, inherit);
+                width: 100%;
+                h3 {
+                    width: 200px;
+                    text-align: center;
+                    margin-top: -3rem;
+                    font-size: 15px;
+                }
+                .carta {
+                    width: 200px;
+                }
+            }
+
+            .column2Tienda {
+                h5 {
+                    margin-top: -4rem;
+                }
+                label {
+                    transform: translate(22px, 0);
+                }
+                h6, p {
+                    text-align: center;
+                }
+                form {
+                    @include flex (inherit, center, center, inherit);
+
+                    .añadir {
+
+
+                        .añadirCarrito {
+                            width: 200px;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
         //main contacto
         .mainContacto {
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.containerTienda .column2Tienda form .añadir .añadirCarrito, .todosProductos a, .container .column2 .submit input, .container .row .column1 .imageContacto a.perfil, header li.menuDesplegable .dropdown button.btn-secondary, footer .suscribite a, footer, .navbar ul a {
+.containerTienda .column2Tienda form .añadir .añadirCarrito, .todosProductos a, .container .column2 .submit input, .container .row .column1 .imageContacto a.perfil, header li.menuDesplegable .dropdown button.btn-secondary, header ul.headerLista li.headerSearch form.d-flex input.form-control.me-2, footer .suscribite a, footer, .navbar ul a {
   border: solid 1px #75151e;
 }
 
@@ -812,6 +812,50 @@ body .stickyWhatsapp img {
   }
   body .indexMain .carouselContainer {
     padding-top: 5rem;
+  }
+  body .containerTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body .containerTienda .column1Tienda {
+    display: flex;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: center;
+    flex-wrap: inherit;
+    width: 100%;
+  }
+  body .containerTienda .column1Tienda h3 {
+    width: 200px;
+    text-align: center;
+    margin-top: -3rem;
+    font-size: 15px;
+  }
+  body .containerTienda .column1Tienda .carta {
+    width: 200px;
+  }
+  body .containerTienda .column2Tienda h5 {
+    margin-top: -4rem;
+  }
+  body .containerTienda .column2Tienda label {
+    transform: translate(22px, 0);
+  }
+  body .containerTienda .column2Tienda h6, body .containerTienda .column2Tienda p {
+    text-align: center;
+  }
+  body .containerTienda .column2Tienda form {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: inherit;
+  }
+  body .containerTienda .column2Tienda form .añadir .añadirCarrito {
+    width: 200px;
+    margin-bottom: 1rem;
   }
   body .mainContacto .column1 {
     width: 100%;

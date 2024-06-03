@@ -26,6 +26,10 @@ header {
         li.headerSearch {
             form.d-flex {
 
+                input.form-control.me-2 {
+                    @extend %border-fino;
+                }
+
 
                 button.btn-outline-success {
                     background-color: #e1c0af;
