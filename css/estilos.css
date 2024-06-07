@@ -262,11 +262,11 @@ body .stickyWhatsapp img {
   justify-content: center;
   flex-wrap: inherit;
   width: 100%;
-  padding-top: 2.5%;
-  padding-bottom: 9%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .carouselContainer .carousel {
-  width: 50%;
+  width: 85%;
   border: 5px solid #75151e;
   border-radius: 8px;
 }
@@ -514,7 +514,6 @@ body .stickyWhatsapp img {
   justify-content: inherit;
   flex-wrap: inherit;
   width: 100%;
-  margin-top: 5rem;
   padding: 20px;
 }
 .containerTienda .column1Tienda {
@@ -636,9 +635,26 @@ body .stickyWhatsapp img {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 767px) and (max-width: 960px) {
+  body {
+    width: 100%;
+  }
+  body header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
   body header .headerLista {
-    padding-top: 1rem;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  body header .headerLista img {
+    width: 55px;
+  }
+  body header .headerLista li.logoCabecera {
+    width: 75px;
   }
   body header .headerLista .headerItem {
     display: none;
@@ -680,6 +696,9 @@ body .stickyWhatsapp img {
     flex-wrap: inherit;
     font-size: 15px;
   }
+  body footer {
+    height: 100%;
+  }
   body footer .redesSociales img {
     width: 30px;
     height: 30px;
@@ -693,6 +712,12 @@ body .stickyWhatsapp img {
   }
   body footer .suscribite a {
     font-size: 14px;
+  }
+  body main .containerTienda {
+    margin-top: -30px;
+  }
+  body main .containerTienda .column2Tienda form .añadir .añadirCarrito {
+    width: 46%;
   }
   body .mainProductos .gridContainer {
     display: grid;
@@ -774,17 +799,30 @@ body .stickyWhatsapp img {
   .navbar li {
     display: none;
   }
+  body header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
   body header ul.headerLista {
-    padding-top: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  body header ul.headerLista .logoCabecera {
+    width: 75px;
+  }
+  body header ul.headerLista img {
+    width: 40px;
   }
   body header ul.headerLista .headerItem {
     display: none;
   }
   body header ul.headerLista .buscador .d-flex {
-    height: 40px;
+    height: 32px;
   }
   body header ul.headerLista .menuDesplegable .dropdown .btn-secondary.dropdown-toggle {
-    font-size: 14px;
+    font-size: 9px;
     margin-left: 1rem;
   }
   body main .tituloPrincipal {
@@ -807,18 +845,13 @@ body .stickyWhatsapp img {
     flex-wrap: inherit;
     font-size: 10px;
   }
-  body .indexMain {
-    height: 450px;
-  }
-  body .indexMain .carouselContainer {
-    padding-top: 5rem;
-  }
   body .containerTienda {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   body .containerTienda .column1Tienda {
     display: flex;
@@ -843,7 +876,8 @@ body .stickyWhatsapp img {
   body .containerTienda .column2Tienda label {
     transform: translate(22px, 0);
   }
-  body .containerTienda .column2Tienda h6, body .containerTienda .column2Tienda p {
+  body .containerTienda .column2Tienda h6,
+  body .containerTienda .column2Tienda p {
     text-align: center;
   }
   body .containerTienda .column2Tienda form {
@@ -857,10 +891,38 @@ body .stickyWhatsapp img {
     width: 201px;
     margin-bottom: 1rem;
   }
-  body .mainContacto .column1 {
+  body .mainContacto {
+    margin-top: -30px;
+  }
+  body .mainContacto .row .column1 {
     width: 100%;
   }
-  body .mainContacto .column1 iframe {
+  body .mainContacto .row .column1 div.imageContacto {
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    justify-content: space-around;
+    flex-wrap: inherit;
+    padding: 10px;
+  }
+  body .mainContacto .row .column1 div.imageContacto a.perfil {
+    display: flex;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: center;
+    flex-wrap: inherit;
+    width: 210px;
+    margin-top: 10px;
+  }
+  body .mainContacto .row .column1 div.imageContacto a.linkIcono {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  body .mainContacto .row .column1 div.imageContacto img.icono {
+    width: 50px;
+  }
+  body .mainContacto .row .column1 iframe {
     display: flex;
     flex-direction: inherit;
     align-items: inherit;
@@ -868,21 +930,6 @@ body .stickyWhatsapp img {
     flex-wrap: inherit;
     width: 100%;
     height: 70%;
-  }
-  body .mainContacto .column1 .imageContacto {
-    display: flex;
-    flex-direction: row;
-    align-items: inherit;
-    justify-content: space-around;
-    flex-wrap: inherit;
-  }
-  body .mainContacto .column1 .imageContacto a.perfil {
-    display: flex;
-    flex-direction: inherit;
-    align-items: inherit;
-    justify-content: center;
-    flex-wrap: inherit;
-    width: 250px;
   }
   body .mainContacto .column2 {
     display: none;
@@ -929,6 +976,7 @@ body .stickyWhatsapp img {
     flex-wrap: inherit;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    height: 100%;
   }
   body footer p {
     font-size: 80%;
@@ -976,6 +1024,9 @@ body .stickyWhatsapp img {
     align-items: erit;
     justify-content: center;
     flex-wrap: inherit;
+  }
+  body .copyright {
+    padding: 4px;
   }
 }
 
