@@ -28,5 +28,12 @@
     &:hover {
         transform: scale(1.2);
         @extend %border-grueso;
+        text-shadow: $textshadow;
     }
+}
+
+%font {
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: italic;
 }

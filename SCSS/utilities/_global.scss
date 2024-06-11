@@ -19,6 +19,9 @@ html {
             display: flex;
             @extend %border-fino;
             border-radius: 10px;
+            font-family: $fontsecundaria;
+            font-style: oblique;
+            font-weight: 700;
             font-size: 15px;
             background-color: #f0e7e3;
             padding: 5px;
@@ -35,10 +38,11 @@ main {
 
     .tituloPrincipal {
         @include flex (inherit, inherit, center, inherit);
-        font-family: $cursiva;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
         font-size: 100px;
-        font-weight: 800;
         font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         margin-top: 1%;
         color: $rojoSeleccionado;
     }
@@ -47,5 +51,7 @@ main {
         @include flex (inherit, inherit, center, inherit);
         display: flex;
         font-size: 25px;
+        @extend %font;
+        font-weight: 500;
     }
 }

@@ -16,6 +16,7 @@
         h3 {
             color: $rojoSeleccionado;
             margin-top: 2rem;
+            font-family: $fontsecundaria;
         }
 
         .carta {
@@ -33,19 +34,23 @@
         h4 {
             color: $rojoSeleccionado;
             text-transform: uppercase;
+            font-family: $fontsecundaria;
         }
 
         h5 {
             color: $rojoSeleccionado;
             text-transform: uppercase;
+            font-family: $fontsecundaria;
         }
 
         h6 {
             margin-top: 1rem;
+            font-family: $fontsecundaria;
         }
 
         p {
             font-size: 11px;
+            font-family: $fontsecundaria;
         }
 
 
@@ -64,6 +69,7 @@
                 label {
                     margin-right: 3rem;
                     color: $rojoSeleccionado;
+                    font-family: $fontsecundaria;
                 }
             }
 
@@ -75,7 +81,9 @@
                     margin-top: 2rem;
                     width: 40%;
                     color: $rojoSeleccionado;
-                    font-weight: 800;
+                    font-family: $fontsecundaria;
+                    font-style: italic;
+                    font-weight: 700;
                     font-size: 18px;
                     background-color: #f0e7e3;
                     border-radius: 10px;
@@ -98,6 +106,7 @@
         color: rgb(23, 204, 23);
         font-weight: 800;
         font-size: 18px;
+        font-family: $fontsecundaria;
         background-color: rgba(23, 204, 23, 0.2);
         border-radius: 10px;
         padding: 5px;

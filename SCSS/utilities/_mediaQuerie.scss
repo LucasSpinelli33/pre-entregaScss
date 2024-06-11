@@ -44,6 +44,8 @@
                     .btn-secondary.dropdown-toggle {
                         font-size: 14px;
                         margin-left: 1rem;
+                        font-family: $fontsecundaria;
+                        font-weight: 700;
                     }
                 }
 
@@ -120,6 +122,7 @@
         main {
             .containerTienda {
                 margin-top: -30px;
+
                 .column2Tienda {
                     form {
                         .añadir {
@@ -164,7 +167,7 @@
                     }
 
                     .linkMaps {
-                        @include flex (inherit, inherit, center, inherit);
+                        @include flex (inherit, center, center, inherit);
                         text-decoration: none;
                         color: $rojoSeleccionado;
                         margin-top: 2rem;
@@ -179,7 +182,7 @@
                         }
 
                         a.perfil {
-                            font-size: 10px;
+                            font-size: 15px;
                         }
 
 
@@ -191,6 +194,7 @@
 
             .column2 {
                 height: 380px;
+                margin-top:2.2rem;
 
                 .direccionLocales {
                     display: none;
@@ -198,6 +202,7 @@
 
                 form {
                     justify-content: start;
+                    margin-top: 4.5rem;
                 }
 
             }
@@ -243,7 +248,7 @@
     }
 
     .direccionLocales {
-        display: none;
+        display: none !important;
     }
 
     .navbar li {
@@ -286,6 +291,8 @@
                         .btn-secondary.dropdown-toggle {
                             font-size: 9px;
                             margin-left: 1rem;
+                            font-family: $fontsecundaria;
+                            font-weight: 700;
                         }
                     }
 
@@ -297,7 +304,7 @@
 
             .tituloPrincipal {
                 @include flex (inherit, inherit, center, inherit);
-                font-size: 45px;
+                font-size: 40px;
                 font-weight: 800;
                 font-style: italic;
                 margin-top: 1%;
@@ -369,6 +376,12 @@
         .mainContacto {
             margin-top: -30px;
 
+            .container {
+                .column2 {
+                    display: none !important;
+                }
+            }
+
             .row {
 
 
@@ -380,13 +393,20 @@
                     div.imageContacto {
                         @include flex (row, inherit, space-around, inherit);
                         padding: 10px;
+                        
 
                         a.perfil {
                             @include flex (inherit, inherit, center, inherit);
                             width: 210px;
                             margin-top: 10px;
+                            font-size: 15px;
+                    
                         }
 
+                        &:nth-child(1) a.perfil {
+                            font-size: 25px; 
+                            text-transform: uppercase;
+                        }
                         a.linkIcono {
                             display: flex;
                             justify-content: center;
@@ -409,7 +429,7 @@
             }
 
             .column2 {
-                display: none;
+                display: none !important;
             }
 
 
@@ -427,8 +447,9 @@
             .horarios {
                 @include flex (inherit, inherit, center, inherit);
                 text-align: center;
+                font-family: $fontsecundaria;
                 color: $rojoSeleccionado;
-                text-transform: uppercase;
+                font-weight: 700;
                 margin-bottom: 0;
                 padding: 20px;
             }

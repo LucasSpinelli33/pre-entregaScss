@@ -4,12 +4,15 @@
     margin-top: 5rem;
 
     h2 {
-        font-family: $cursiva;
+        font-family: $fontsecundaria;
+        font-weight: 700;
+        @extend %font;
         color: $rojoSeleccionado;
     }
 
 
     p {
         @include flex (inherit, inherit, inherit, wrap);
+        font-family: $fontsecundaria;
     }
 }

@@ -26,6 +26,13 @@ header ul.headerLista li.usuario:hover, header ul.headerLista li.carrito:hover {
 }
 .navbar ul a:hover {
   transform: scale(1.2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quienesSomos h2, .container .column2 .submit input, .container .row .column1 .imageContacto a.perfil, footer .contacto, footer .cabeceraRedes, footer .redesSociales, main .tituloSecundario {
+  font-family: "Cormorant Garamond", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-style: italic;
 }
 
 * {
@@ -56,6 +63,9 @@ html {
   color: #75151e;
   display: flex;
   border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
+  font-weight: 700;
   font-size: 15px;
   background-color: #f0e7e3;
   padding: 5px;
@@ -71,10 +81,11 @@ main .tituloPrincipal {
   align-items: inherit;
   justify-content: center;
   flex-wrap: inherit;
-  font-family: "Dancing Script", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
   font-size: 100px;
-  font-weight: 800;
   font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-top: 1%;
   color: #75151e;
 }
@@ -86,6 +97,7 @@ main .tituloSecundario {
   flex-wrap: inherit;
   display: flex;
   font-size: 25px;
+  font-weight: 500;
 }
 
 footer {
@@ -106,6 +118,7 @@ footer .redesSociales {
   align-items: inherit;
   justify-content: inherit;
   flex-wrap: inherit;
+  font-weight: 600;
 }
 footer .redesSociales img {
   width: 40px;
@@ -122,6 +135,7 @@ footer .cabeceraRedes {
   justify-content: center;
   flex-wrap: inherit;
   margin-bottom: 17%;
+  font-weight: 600;
 }
 footer .iconoFooter {
   display: flex;
@@ -137,13 +151,19 @@ footer .contacto {
   justify-content: center;
   flex-wrap: inherit;
   margin-top: 2.3%;
+  font-weight: 300;
+}
+footer .contacto h6 {
+  font-weight: 600;
+  display: flex;
 }
 footer .suscribite a {
   text-decoration: none;
-  font-family: "Dancing Script", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-style: oblique;
   margin-top: 45px;
   color: #75151e;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   background-color: #f0e7e3;
   border-radius: 10px;
@@ -308,6 +328,7 @@ body .stickyWhatsapp img {
   text-decoration: none;
   color: #75151e;
   margin-top: 2rem;
+  font-family: "Cormorant Garamond", serif;
 }
 .container .row .column1 .imageContacto {
   padding: 30px;
@@ -344,12 +365,13 @@ body .stickyWhatsapp img {
   margin-top: 4rem;
 }
 .container .column2 .direccionLocales h5 {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   text-align: center;
   text-decoration: underline;
   color: #75151e;
   text-transform: uppercase;
   justify-content: center;
+  font-family: "Cormorant Garamond", serif;
 }
 .container .column2 .direccionLocales ul {
   display: flex;
@@ -363,15 +385,17 @@ body .stickyWhatsapp img {
 }
 .container .column2 .direccionLocales ul li {
   padding: 20px;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: "Cormorant Garamond", serif;
 }
 .container .column2 .direccionLocales h6 {
   text-align: center;
   justify-content: center;
-  margin-top: 7rem;
+  margin-top: 0.5rem;
   font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+  margin-left: 5px;
   color: #75151e;
-  text-transform: uppercase;
 }
 .container .column2 p {
   display: flex;
@@ -379,10 +403,14 @@ body .stickyWhatsapp img {
   align-items: end;
   justify-content: center;
   flex-wrap: inherit;
-  font-size: 25px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #75151e;
   text-transform: uppercase;
-  font-family: "Dancing Script", cursive;
+  font-family: "Cormorant Garamond", serif;
+  margin-left: 20px;
 }
 .container .column2 form {
   display: flex;
@@ -392,6 +420,7 @@ body .stickyWhatsapp img {
   flex-wrap: inherit;
   padding: 20px;
   text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
   color: #75151e;
 }
 .container .column2 form input {
@@ -412,6 +441,7 @@ body .stickyWhatsapp img {
   padding: 5px;
   color: #75151e;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .container .column2 .submit input:hover {
   background-color: rgba(24, 24, 24, 0.2);
@@ -429,7 +459,8 @@ body .stickyWhatsapp img {
   margin-top: 5rem;
 }
 .quienesSomos h2 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
   color: #75151e;
 }
 .quienesSomos p {
@@ -438,6 +469,7 @@ body .stickyWhatsapp img {
   align-items: inherit;
   justify-content: inherit;
   flex-wrap: wrap;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .mainProductos .gridContainer {
@@ -473,6 +505,7 @@ body .stickyWhatsapp img {
   justify-content: center;
   flex-wrap: inherit;
   text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
   font-size: 25px;
   color: #f0e7e3;
   padding: 7px;
@@ -496,6 +529,7 @@ body .stickyWhatsapp img {
   text-decoration: none;
   padding-bottom: 2rem;
   border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
   font-size: 20px;
   padding: 10px;
   color: #75151e;
@@ -531,6 +565,7 @@ body .stickyWhatsapp img {
 .containerTienda .column1Tienda h3 {
   color: #75151e;
   margin-top: 2rem;
+  font-family: "Cormorant Garamond", serif;
 }
 .containerTienda .column1Tienda .carta {
   padding: 4px;
@@ -549,16 +584,20 @@ body .stickyWhatsapp img {
 .containerTienda .column2Tienda h4 {
   color: #75151e;
   text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
 }
 .containerTienda .column2Tienda h5 {
   color: #75151e;
   text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif;
 }
 .containerTienda .column2Tienda h6 {
   margin-top: 1rem;
+  font-family: "Cormorant Garamond", serif;
 }
 .containerTienda .column2Tienda p {
   font-size: 11px;
+  font-family: "Cormorant Garamond", serif;
 }
 .containerTienda .column2Tienda form {
   display: flex;
@@ -582,6 +621,7 @@ body .stickyWhatsapp img {
 .containerTienda .column2Tienda form .formRow label {
   margin-right: 3rem;
   color: #75151e;
+  font-family: "Cormorant Garamond", serif;
 }
 .containerTienda .column2Tienda form .añadir {
   display: flex;
@@ -595,7 +635,9 @@ body .stickyWhatsapp img {
   margin-top: 2rem;
   width: 40%;
   color: #75151e;
-  font-weight: 800;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 700;
   font-size: 18px;
   background-color: #f0e7e3;
   border-radius: 10px;
@@ -621,6 +663,7 @@ body .stickyWhatsapp img {
   color: rgb(23, 204, 23);
   font-weight: 800;
   font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
   background-color: rgba(23, 204, 23, 0.2);
   border-radius: 10px;
   padding: 5px;
@@ -662,6 +705,8 @@ body .stickyWhatsapp img {
   body header .headerLista .dropdown .btn-secondary.dropdown-toggle {
     font-size: 14px;
     margin-left: 1rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
   }
   body header .headerLista .buscador .d-flex {
     height: 40px;
@@ -741,7 +786,7 @@ body .stickyWhatsapp img {
   body .mainContacto .row .column1 .linkMaps {
     display: flex;
     flex-direction: inherit;
-    align-items: inherit;
+    align-items: center;
     justify-content: center;
     flex-wrap: inherit;
     text-decoration: none;
@@ -755,16 +800,18 @@ body .stickyWhatsapp img {
     width: 40px;
   }
   body .mainContacto .row .column1 .imageContacto a.perfil {
-    font-size: 10px;
+    font-size: 15px;
   }
   body .mainContacto .column2 {
     height: 380px;
+    margin-top: 2.2rem;
   }
   body .mainContacto .column2 .direccionLocales {
     display: none;
   }
   body .mainContacto .column2 form {
     justify-content: start;
+    margin-top: 4.5rem;
   }
   body .direccionLocalesNone h5.cabeceraDirecciones {
     text-align: center;
@@ -794,7 +841,7 @@ body .stickyWhatsapp img {
     display: none;
   }
   .direccionLocales {
-    display: none;
+    display: none !important;
   }
   .navbar li {
     display: none;
@@ -824,6 +871,8 @@ body .stickyWhatsapp img {
   body header ul.headerLista .menuDesplegable .dropdown .btn-secondary.dropdown-toggle {
     font-size: 9px;
     margin-left: 1rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
   }
   body main .tituloPrincipal {
     display: flex;
@@ -831,7 +880,7 @@ body .stickyWhatsapp img {
     align-items: inherit;
     justify-content: center;
     flex-wrap: inherit;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
     font-style: italic;
     margin-top: 1%;
@@ -894,6 +943,9 @@ body .stickyWhatsapp img {
   body .mainContacto {
     margin-top: -30px;
   }
+  body .mainContacto .container .column2 {
+    display: none !important;
+  }
   body .mainContacto .row .column1 {
     width: 100%;
   }
@@ -913,6 +965,11 @@ body .stickyWhatsapp img {
     flex-wrap: inherit;
     width: 210px;
     margin-top: 10px;
+    font-size: 15px;
+  }
+  body .mainContacto .row .column1 div.imageContacto:nth-child(1) a.perfil {
+    font-size: 25px;
+    text-transform: uppercase;
   }
   body .mainContacto .row .column1 div.imageContacto a.linkIcono {
     display: flex;
@@ -932,7 +989,7 @@ body .stickyWhatsapp img {
     height: 70%;
   }
   body .mainContacto .column2 {
-    display: none;
+    display: none !important;
   }
   body .direccionLocalesNone .cabeceraDirecciones {
     display: none;
@@ -947,8 +1004,9 @@ body .stickyWhatsapp img {
     justify-content: center;
     flex-wrap: inherit;
     text-align: center;
+    font-family: "Cormorant Garamond", serif;
     color: #75151e;
-    text-transform: uppercase;
+    font-weight: 700;
     margin-bottom: 0;
     padding: 20px;
   }

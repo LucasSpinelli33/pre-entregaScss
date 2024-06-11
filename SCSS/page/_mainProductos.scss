@@ -10,11 +10,11 @@
 
         .gridItem {
             @include flex (inherit, inherit, inherit, wrap);
-            border:linear-gradient(90deg, rgba(36,0,0,0.9641106442577031) 0%, rgba(132,10,10,0.8352591036414566) 100%) 7px solid;
+            border: linear-gradient(90deg, rgba(36, 0, 0, 0.9641106442577031) 0%, rgba(132, 10, 10, 0.8352591036414566) 100%) 7px solid;
             height: 100%;
             width: 100%;
             border-radius: 10px;
-            background: linear-gradient(90deg, rgba(36,0,0,0.9641106442577031) 0%, rgba(132,10,10,0.8352591036414566) 100%);
+            background: linear-gradient(90deg, rgba(36, 0, 0, 0.9641106442577031) 0%, rgba(132, 10, 10, 0.8352591036414566) 100%);
             padding: 7px;
 
             img {
@@ -25,6 +25,7 @@
             a.linkProductos {
                 @include flex (inherit, center, center, inherit);
                 text-decoration: none;
+                font-family: $fontsecundaria;
                 font-size: 25px;
                 color: #f0e7e3;
                 padding: 7px;
@@ -45,6 +46,7 @@
         padding-bottom: 2rem;
         @extend %border-fino;
         border-radius: 10px;
+        font-family: $fontsecundaria;
         font-size: 20px;
         padding: 10px;
         color: $rojoSeleccionado;
@@ -58,4 +60,3 @@
     }
 
 }
-

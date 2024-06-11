@@ -11,6 +11,8 @@ footer {
 
     .redesSociales {
         @include flex (column, inherit, inherit, inherit);
+        @extend %font;
+        font-weight: 600;
 
         img {
             width: 40px;
@@ -26,6 +28,8 @@ footer {
     .cabeceraRedes {
         @include flex (inherit, inherit, center, inherit);
         margin-bottom: 17%;
+        @extend %font;
+        font-weight: 600;
     }
 
     .iconoFooter {
@@ -36,15 +40,22 @@ footer {
     .contacto {
         @include flex (column, center, center, inherit);
         margin-top: 2.3%;
+        @extend %font;
+        font-weight: 300;
+        h6 {
+            font-weight: 600;
+            display: flex;
+        }
     }
 
     .suscribite {
         a {
             text-decoration: none;
-            font-family: $cursiva;
+            font-family: $fontsecundaria;
+            font-style: oblique;
             margin-top: 45px;
             color: $rojoSeleccionado;
-            font-weight: 800;
+            font-weight: 700;
             font-size: 18px;
             background-color: #f0e7e3;
             border-radius: 10px;
